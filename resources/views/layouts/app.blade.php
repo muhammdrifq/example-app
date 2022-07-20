@@ -14,7 +14,6 @@
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('css/bootstrap.css') }}"></script>
     <script src="{{ asset('DataTables/datatables.min.js') }}"></script>
     <script>
         $(document).ready(function() {
@@ -27,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('DataTables/datatables.min.css') }}">
 </head>
@@ -48,7 +47,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        {{-- menu dikiri --}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('siswa.index') }}">
+                                Siswa
+                            </a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
